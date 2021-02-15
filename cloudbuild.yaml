@@ -13,14 +13,6 @@
 # limitations under the License.
 
 steps:
-  - id: 'clone'
-    name: 'gcr.io/cloud-builders/git'
-    args:
-      - 'clone'
-      - 'git@github.com:urbn-sso-sandbox/gcbapp-buildconfig-example'
-    volumes:
-      - name: 'ssh'
-        path: /root/.ssh
   # Build the module.
   - id: 'build'
     name: golang
